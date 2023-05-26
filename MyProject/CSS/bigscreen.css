@@ -1,0 +1,75 @@
+* {
+    padding: 1px;
+}
+
+@font-face {
+    font-family: Vero;
+    src: url(fonts/Veronica-Hamish.woff) format('woff');
+}
+
+header {
+    background: white;
+    color: black;
+    text-align: center;    
+    font-size: 30px;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+table {
+    width: 80%;
+}
+
+#mymenu {
+    font: white;
+    font-weight: bold;
+}
+
+.h2-menu {
+    font-size: 40px;
+
+}
+
+.h4 {
+    font-size: 37px;
+    text-align: left;
+}
+
+.portion {
+    font-size: 37px;
+    text-align: left;
+}
+.price {
+    font-size: 37px;
+    text-align: left;
+}
+
+.descriptionmeal {
+    font-size: 29px;
+    text-align: left;
+}
+
+
+footer {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+}
+

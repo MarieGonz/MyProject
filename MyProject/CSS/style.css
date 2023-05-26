@@ -1,0 +1,224 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@font-face {
+    font-family: Vero;
+    src: url(../fonts/Veronica-Hamish.woff) format('woff');
+}
+
+@font-face {
+    font-family: Alex;
+    src: url(../fonts/Alexandra\ Magnolia\ Script.woff) format('woff');
+    src: url(../fonts/Alexandra\ Magnolia\ Script.woff2) format('woff2');
+}
+
+header {
+    background: white;
+    padding: 15px 30px ;
+    color: black;
+    align-items: center;    
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    display: block;
+    text-align: right;
+}
+
+#mylogo {
+    width: 100px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+body {
+    font-family: Alex;
+    font-weight: lighter;
+    background-color: black;
+    color: white;
+} 
+
+main {
+    padding: 10px 30px;
+}
+
+#mymenu {
+    font: white;
+    font-weight: lighter;
+}
+.h2-menu {
+    font-size: 40px;
+}
+
+.pic {
+    width: 230px;
+    height: 270px;
+}
+
+.h4 {
+    font-size: 40px;
+    text-align: left;
+}
+
+.portion {
+    font-size: 30px;
+    text-align: right;
+}
+.price {
+    font-size: 30px;
+    text-align: right;
+}
+
+.descriptionmeal {
+    font-size: 25px;
+    text-align: left;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+    font-size: 30px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#footer-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+    width: 100%;
+
+}
+
+
+/* breakpoint mobile */
+@media only screen and (min-width: 576px) {
+
+header a {
+        font-size: 45px;
+}
+
+#mylogo {
+    width: 150px;
+}
+
+.h2-menu {
+    font-size: 70px;
+}
+
+.h4 {
+    font-size: 50px;
+    text-align: left;
+}
+
+.portion {
+    font-size: 40px;
+    text-align: right;
+}
+.price {
+    font-size: 40px;
+    text-align: right;
+}
+
+.descriptionmeal {
+    font-size: 35px;
+    text-align: left;
+}
+
+footer {
+   font-size: 40px;
+}
+
+footer p {
+    font-size: 30px ;
+}
+
+footer a {
+    font-size: 40px;
+}
+
+}
+
+/* breakpoint computer */
+@media only screen and (min-width: 1200px) {
+
+header a {
+    font-size: 120px;
+    display: inline;
+    text-align: right;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+#mylogo {
+    width: 250px;
+}
+
+.h2-menu {
+    font-size: 100px;
+    text-align: center;
+}
+
+.pic {
+    display: block;
+    margin: auto;    
+    width: 430px;
+    height: 470px;
+}
+
+.h4 {
+    font-size: 85px;
+    text-align: left;
+}
+
+.portion {
+    font-size: 85px;
+    text-align: right;
+}
+.price {
+    font-size: 85px;
+    text-align: right;
+}
+
+.descriptionmeal {
+    font-size: 75px;
+    text-align: left;
+}
+
+footer p {
+    font-size: 25px;
+}
+
+footer a {
+    font-size: 65px;
+}
+
+}
