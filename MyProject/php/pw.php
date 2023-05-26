@@ -11,11 +11,6 @@ echo md5($password); //generate a secure hash of the password
 echo "<br>";
 echo "<br>";
 
-//if ("e9803a706f81a40884b8aeafafb2cfd3" == md5($password) ) {
-//     echo "your PW is correct";
-//     echo "<br>";
-// }
-
 echo "<br>";
 echo $password . $salt;
 echo "<br>";

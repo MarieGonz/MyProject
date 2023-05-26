@@ -27,6 +27,8 @@ if (!empty($_POST)) {
     $validate->isFilled($_POST["quantity"], "Quantity");
     $validate->isFilled($_POST["unit"], "Unit");
     $validate->isFilled($_POST["price"], "Price");
+    $validate->isFilled($_POST["inactive"], "Deactivate");
+    $validate->isFilled($_POST["inactive_from"], "Deactivate from");
 
 
 
@@ -39,6 +41,9 @@ if (!empty($_POST)) {
             "unit" => $_POST["unit"],
             "price" => $_POST["price"],
             "cat_id" => $_POST["cat_id"],
+            "inactive" => $_POST["inactive"],
+            "inactive_from" => $_POST["inactive_from"],
+
         ));
         $product->save();
         $success = true;
@@ -51,7 +56,7 @@ if (!empty($_POST)) {
 <?php
  if ( $success) {
     echo "<p><strong>Product changed.</strong><br>
-    <a href='produkte_bearbeiten.php'>go back</a></p>";    
+    <a href='produkte_liste.php'>go back</a></p>";    
 
  } else {
 
@@ -145,6 +150,24 @@ if (!empty($_POST)) {
             } ?>">
         </div>
 
+        <div>
+            <label for="inactive">Deactivate in the menu:</label>
+            <input type="checkbox" id="inactive" name="inactive" value="1" <?php
+                if (!empty($_POST["inactive"]) && $_POST["inactive"] == 1) {
+                echo "checked";
+                } else if (!isset($_POST["inactive"]) && empty($product)) {
+                 echo "checked";
+                }  ?>> 
+        </div>
+        
+        <div>
+            <label for="inactive_from">Deactivate from:</label>
+            <input type="date" name="inactive_from" id="inactive_from"<?php
+            if (!empty($product->inactive_from)) {
+            echo ' value="' . htmlspecialchars($product->inactive_from) . '"';
+            }?>>
+        </div>
+       
 
         <div>
             <button type="submit">Save product</button>

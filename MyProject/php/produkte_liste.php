@@ -35,6 +35,8 @@ echo "<table border='1'>";
     echo "<th>Unit</th>";
     echo "<th>Price</th>";
     echo "<th>Sorting</th>";
+    echo "<th>Deactivated</th>";
+    echo "<th>Deactivate from:</th>";
 
 
 
@@ -57,7 +59,10 @@ echo "<table border='1'>";
         echo "<td>" . $menu->unit . "</td>";
         echo "<td>" . $menu->price . "</td>";
         echo "<td>" . $menu->sorting . "</td>";
+        echo "<td>" . ($menu->inactive == 1 ? "Yes" : "No") . "</td>";
+        echo "<td>" . $menu->inactive_from . "</td>";
 
+                      
 
 
         echo "<td>" . "<a href='produkte_bearbeiten.php?id={$menu->id}'>Edit</a>" . "<br>"

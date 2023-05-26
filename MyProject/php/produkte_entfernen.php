@@ -28,6 +28,8 @@ if ( !empty( $_GET["doit"] ) ) {
     echo "<strong>Unit</strong> ". $product-> unit ."<br />";
     echo "<strong>Price</strong> ". $product-> price ."<br />";
     echo "<strong>sorting</strong> ". $product-> sorting ."<br />";
+    echo "<strong>sorting</strong> ". $product-> inactive ."<br />";
+    echo "<strong>sorting</strong> ". $product-> inactive_from ."<br />";
 
 
     echo "<p>
